@@ -9,38 +9,36 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    
+    <!-- Desktop Navigation -->
     <nav id="desktop-nav">
       <div class="logo">Sujendra Nayak</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skill">Skills</a></li>
-          <li><a href="#project">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
 
-  
+    <!-- Mobile Hamburger Navigation -->
     <nav id="hamburger-nav">
       <div class="logo">Sujendra Nayak</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <div class="hamburger-icon">
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <div class="menu-links">
+        <ul class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#skill" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+        </ul>
       </div>
     </nav>
 
-   
+    <!-- Profile Section -->
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/photo.png" alt="Sujendra Nayak profile picture" />
@@ -50,151 +48,19 @@
         <h1 class="title">Sujendra Nayak</h1>
         <p class="section__text__p2">ROBOTICS & AI</p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/sujendra_cv.pdf')"
-          >
+          <button class="btn btn-color-2" onclick="window.open('./assets/sujendra_cv.pdf')">
             Download Resume
           </button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
-            Contact Info
-          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/sujendra-n-a5ba14244/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/SujendraNayak'"
-          />
+          <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon" onclick="window.open('https://www.linkedin.com/in/sujendra-n-a5ba14244/')" />
+          <img src="./assets/github.png" alt="Github profile" class="icon" onclick="window.open('https://github.com/SujendraNayak')" />
         </div>
       </div>
     </section>
-
-    <!-- About Section -->
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/photo.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.E IN ROBOTICS AND AI ENGINEERING <br/> CGPA:8.96 <br/>NMAM INSTITUTE OF TECHNOLOGY NITTE</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Inquisitive, solution-oriented computer science engineer with a zeal for innovation. Seeking to be a part of an enthusiastic work environment, where I can use my technical skills, problem-solving ability, and leadership qualities, especially in the fields of Web Development, to accomplish organizational growth.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skill" class="skills">
-      <h2>SKILLS</h2>
-      <div class="skill">
-        <h3>HTML</h3>
-        <div class="progress">
-          <div class="bar" style="width: 90%;"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <h3>CSS</h3>
-        <div class="progress">
-          <div class="bar" style="width: 65%;"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <h3>Java</h3>
-        <div class="progress">
-          <div class="bar" style="width: 80%;"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <h3>Python</h3>
-        <div class="progress">
-          <div class="bar" style="width: 70%;"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <h3>Machine Learning</h3>
-        <div class="progress">
-          <div class="bar" style="width: 70%;"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <h3>Web Development</h3>
-        <div class="progress">
-          <div class="bar" style="width: 70%;"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="project" class="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>E-commerce website</h3>
-        <p>Created a responsive E-commerce web application with product browsing, shopping cart functionality, user authentication, and a secure checkout process for a seamless shopping experience.</p>
-        <a href="https://github.com/SujendraNayak/Internship-Projects">Link to E-commerce website</a>
-      </div>
-      <div class="project">
-        <h3>Enhanced Dental Classification and Numbering System Using Deep Learning</h3>
-        <p>Developed a deep learning model for automated identification and numbering of teeth in dental X-rays to improve diagnostic speed and accuracy.</p>
-         <!-- <a href="https://github.com/SujendraNayak/Enhanced_Dental_Classification">Link</a>  -->
-      </div>
-      <div class="project">
-        <h3>Food Delivery App Using MERN Stack</h3>
-        <p>Built a full-stack food delivery app using MongoDB, Express, React, and Node.js with features like real-time order tracking, authentication, and payment integration for a responsive user experience.</p>
-        <a href="https://github.com/SujendraNayak/Food_Delivery_website">Link to Food Delivery App Using MERN Stack</a>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:sujinayak08@gmail.com">sujinayak08@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/sujendra-n-a5ba14244">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-
+    
+    <!-- Include JavaScript file -->
     <script src="script.js"></script>
   </body>
 </html>

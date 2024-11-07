@@ -9,58 +9,249 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <!-- Desktop Navigation -->
+    <div class="theme-toggle-container">
+      <button id="theme-toggle" class="btn">sandhya Theme</button>
+    </div>
     <nav id="desktop-nav">
-      <div class="logo">Sujendra Nayak</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skill">Skills</a></li>
-        <li><a href="#project">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div class="logo">Sandhya Nayak</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-
-    <!-- Mobile Hamburger Navigation -->
     <nav id="hamburger-nav">
-      <div class="logo">Sujendra Nayak</div>
-      <div class="hamburger-menu" onclick="toggleMenu()">
-        <div class="hamburger-icon">
+      <div class="logo">Sandhya Nayak</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <ul class="menu-links">
+        <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#skill" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </ul>
+        </div>
       </div>
     </nav>
-
-    <!-- Profile Section -->
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/photo.png" alt="Sujendra Nayak profile picture" />
+        <img src="./assets/photo.jpg" alt="sandhya nayak profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Sujendra Nayak</h1>
-        <p class="section__text__p2">ROBOTICS & AI</p>
+        <h1 class="title">Sandhya Nayak</h1>
+        <p class="section__text__p2">ISE UNDERGRADUATE</p>
         <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/sujendra_cv.pdf')">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/sandhya.pdf')"
+          >
             Download Resume
           </button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
         <div id="socials-container">
-          <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon" onclick="window.open('https://www.linkedin.com/in/sujendra-n-a5ba14244/')" />
-          <img src="./assets/github.png" alt="Github profile" class="icon" onclick="window.open('https://github.com/SujendraNayak')" />
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sandhya-05087023a/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/sandhya2505'"
+          />
         </div>
       </div>
     </section>
-    
-    <!-- Include JavaScript file -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/photo.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                B.E IN INFORMATION SCIENCE AND ENGINEERING <br />
+                CGPA:8.26 <br />Nitte Mahalinga Adyanthaya Memorial Institute Of
+                Technology Nitte
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              "Information Science undergraduate, excited to learn and apply my
+              knowledge to real-world challenges. I seek opportunities that
+              allow me to contribute to innovative solutions while expanding my
+              skills and expertise in technology, particularly in ReactJS and
+              the MERN stack. Passionate about solving complex problems, I am
+              eager to leverage my skills in front-end and back-end development
+              to drive impactful results."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill" class="skills">
+      <h2>SKILLS</h2>
+      <div class="skill">
+        <h3>HTML</h3>
+        <div class="progress">
+          <div class="bar" style="width: 90%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <h3>CSS</h3>
+        <div class="progress">
+          <div class="bar" style="width: 65%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <h3>Java</h3>
+        <div class="progress">
+          <div class="bar" style="width: 80%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <h3>Python</h3>
+        <div class="progress">
+          <div class="bar" style="width: 70%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <h3>Machiene Learning</h3>
+        <div class="progress">
+          <div class="bar" style="width: 70%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <h3>React js</h3>
+        <div class="progress">
+          <div class="bar" style="width: 80%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3>Node js</h3>
+        <div class="progress">
+          <div class="bar" style="width: 80%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <h3>Web Development</h3>
+        <div class="progress">
+          <div class="bar" style="width: 70%"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Admin Dashboard Project</h3>
+
+        <p>
+          This project is an Admin Dashboard developed with ReactJS, focused on
+          providing administrators with a streamlined interface to monitor data
+          and manage key metrics. It enables efficient viewing and analysis of
+          information through interactive components, supporting smooth
+          navigation and real-time data representation.
+        </p>
+        <a href="https://github.com/sandhya2505?tab=repositories"
+          >Link to github</a
+        >
+      </div>
+
+      <div class="project">
+        <h3>Karkala Tourism Places</h3>
+
+        <p>
+          This project is a tourism application focused on showcasing the
+          historical and cultural attractions of Karkala. The app provides users
+          with detailed information about various places, enriched with images
+          and descriptions, and features navigation for easy exploration.
+        </p>
+        <a href="https://github.com/sandhya2505?tab=repositories"
+          >Link to github</a
+        >
+      </div>
+
+      <div class="project">
+        <h3>Crop recomendation project</h3>
+
+        <p>
+          The Crop Recommendation System is a machine learning-based application
+          that provides crop recommendations based on soil characteristics,
+          rainfall, and temperature. The model predicts the best crop to be
+          grown based on the user-provided input.
+        </p>
+        <a href="https://github.com/sandhya2505?tab=repositories"
+          >Link to github</a
+        >
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:examplemail@gmail.com"
+              >sandhyanayak2505@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/sandhya-05087023a/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
